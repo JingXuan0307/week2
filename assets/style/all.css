@@ -1,23 +1,221 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+img{
+    display: block;
+    min-width: 100%;
+}
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+h1{
+    font-size: 80px;
+    line-height: 106px;
+    font-weight: bold;
+    color: #fff;
+}
 
-/*# sourceMappingURL=all.css.map */
+h2{
+    font-size: 64px;
+    line-height: 84px;
+    margin: 56px 0 40px 0;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.container{
+    padding: 0 360px;
+    margin: 0 auto;
+}
+
+/*banner*/
+.banner{
+    height: calc(100vh);
+    background: url(../images/banner.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .contant p:first-child{
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+    line-height: 42px;
+}
+
+.banner .contant p:nth-child(3) {
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+    margin: 32px 0 40px 0;
+    font-style: italic;
+}
+
+.banner .contant ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*about*/
+.about{
+    padding-bottom: 56px;
+    }
+
+.about .contant .photo{
+    width: 384px;
+    height: 384px;
+    margin: 0 auto;
+}
+
+.about .contant{
+    display: block;
+    text-align: center;
+}
+
+.about .contant .article p{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.about .contant .article p:last-child{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.about .contant .line{
+    width: 384px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+.about .contant ul li p{
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 42px;
+    margin-top: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about .contant ul li p::before{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: hsla(0, 70%, 32%, 0);
+    top: 11px;
+    left: -38px;
+}
+
+.about .contant ul li p:hover::before{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: hsla(0, 70%, 32%, 1);
+    top: 11px;
+    left: -38px;
+}
+
+/*brand*/
+.brand{
+    background-color: #000;
+    color: #fff;
+    font-style: italic;
+    padding: 56px 0 160px 0;
+}
+
+.brand .container .contant{
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.brand .container .contant p{
+    font-size: 24px;
+    line-height: 42px;
+    margin-top: 12px;
+
+}
+
+.brand .container .contant p:nth-child(3){
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-bottom: 68px;
+}
+
+.brand .container .photo1 li{
+    width: 792px;
+    margin: 0 auto;
+
+}
+
+.brand .container .photo2{
+    display: flex;
+    margin-top: 40px;    
+}
+
+.brand .container .photo2 li{
+    width: 588px;
+    margin: 0 auto;
+}
+
+
+.work{
+    width: calc(100vh);
+}
+
+.works .contant p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 16px 0 56px 0;
+}
+
+.works .contant .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works .contant .list  li .lowercase{
+    font-size: 20px;
+    line-height: 42px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+/*footer*/
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 64px 0;
+}
+
+.footer ul li{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.footer h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer ul li a{
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    }
